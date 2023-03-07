@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .container {
+    @apply m-auto max-w-[1920px] px-[200px] lg:p-0;
+  }
+
+  .header-text {
+    @apply whitespace-nowrap font-sprat font-medium leading-none text-ylw-100;
+  }
+
+  .header-text span {
+    @apply font-bold text-transparent;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(20, 20, 20, 0.53) 75.02%);
+    background-clip: text;
+  }
+
+  .sub-text {
+    @apply whitespace-nowrap font-syne font-bold tracking-wide text-sub;
+    font-size: clamp(0.01rem, 1.6vw, 1rem);
+  }
+
+  .tech-text {
+    @apply flex justify-between whitespace-nowrap uppercase text-light;
+    font-size: clamp(1.5rem, 4vw, 3.75rem);
+  }
+
+  .borderline {
+    @apply border-b-[1px] border-[#353535] text-center text-light;
+  }
+}
+
+* {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+}
+main {
+  height: 100%;
+}
+
+.after-block {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(20, 20, 20, 0.53) 75.02%);
+}
